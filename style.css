@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.contianer {
+  background-image: linear-gradient(
+      120deg,
+      hsla(239, 94%, 19%, 0.6) 5%,
+      rgba(0, 236, 188, 0.5) 100%
+    ),
+    url(img/Beko-Homepage-Products-1920x600.jpg);
+}
+h1 {
+  padding: 15px;
+  background-image: linear-gradient(
+    160deg,
+    hsla(239, 94%, 19%, 0.7) 0%,
+    rgba(33, 204, 170, 0.5) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
+.header .main {
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.header .sub {
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+  letter-spacing: 20px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.popup-section {
+  width: 75%;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  /* background-color: hsla(209, 75%, 38%, 0.636);
+   */
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  top: 30px;
+  left: 12.5%;
+  bottom: 30px;
+  z-index: 1;
+}
+.popup-section .popup-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-section .popup-img img {
+  width: 50%;
+}
+.icon {
+  stroke: #343a40;
+  width: 50px;
+  hight: 50px;
+  cursor: pointer;
+}
+/* #leftBtn {
+  background-color: black;
+} */
+.close-icon {
+  stroke: #343a40;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.Gallery-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  padding: 30px 0;
+  margin: auto;
+}
+.Gallery-section .img-box {
+  width: 30%;
+  margin: 50px 0;
+  text-align: center;
+}
+.Gallery-section .img-box img {
+  width: 50%;
+  transition: 1s ease;
+}
+.Gallery-section .img-box img:hover {
+  transform: scale(1.5);
+  transition: 0.8s ease-in-out;
+}
+
+.show {
+  display: flex !important;
+}
