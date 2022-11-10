@@ -34,11 +34,11 @@ leftBtn.addEventListener("click", function () {
 });
 
 document.addEventListener("keydown", function (e) {
-  if (e.code == "ArrowRight") {
+  if (e.key == "ArrowRight") {
     nextImg();
-  } else if (e.code == "ArrowLeft") {
+  } else if (e.key == "ArrowLeft") {
     prevImg();
-  } else if (e.code == "Escape") {
+  } else if (e.key == "Escape") {
     popupSection.classList.remove("show");
   }
 });
